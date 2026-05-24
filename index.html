@@ -8,6 +8,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -29,49 +30,87 @@
 
     <!-- SOBRE MI -->
     <section id="sobre-mi">
-        <article>
-            <h2>Sobre mí</h2>
+    <article>
+        <h2>Sobre mí</h2>
 
-            <img src="./assets/img/yo.png" alt="Foto de perfil">
+        <div class="perfil">
+            <img src="./assets/img/Msin_fondo.png" alt="Foto de perfil">
 
-            <p>Soy estudiante de Desarrollo de Software, actualmente en etapa final de mi formación, con foco en desarrollo frontend.</p>
+            <div class="texto">
+                <p>
+                    Soy estudiante de Desarrollo de Software, actualmente en etapa final de mi formación, con foco en desarrollo frontend.
+                </p>
 
-            <p>Me interesa construir interfaces web claras, funcionales y accesibles, combinando diseño y lógica.</p>
+                <p>
+                    Me interesa construir interfaces web claras, funcionales y accesibles, combinando diseño y lógica. Disfruto transformar ideas en páginas reales que puedan ser usadas por personas.
+                </p>
 
-            <p>Estoy buscando mi primera oportunidad en el mundo IT para seguir creciendo como desarrolladora y participar en proyectos reales.</p>
+                <p>
+                    Actualmente estoy reforzando mis conocimientos en HTML, CSS y JavaScript, y comenzando a trabajar con backend para entender el desarrollo completo de una aplicación.
+                </p>
 
-            <p>Me gusta aprender nuevas tecnologías, trabajar en equipo y mejorar constantemente mis habilidades.</p>
+                <p>
+                    Estoy buscando mi primera oportunidad en el mundo IT para seguir creciendo como desarrolladora, aprender en equipo y participar en proyectos reales.
+                </p>
 
-            <a href="https://github.com/marce-sanagua/mi-agenda" target="_blank">
-                Ver proyecto
-            </a>
-        </article>
-    </section>
+                <p>
+                    Mi objetivo es seguir mejorando mis habilidades y construir aplicaciones útiles, bien diseñadas y funcionales.
+                </p>
 
+                
+            </div>
+        </div>
+    </article>
+</section>
     <!-- QUE HAGO -->
     <section id="que-hago">
-        <h2>Qué hago</h2>
+    <h2>Qué hago</h2>
 
-        <div class="card">
-            <h3>💻 Desarrollo Frontend</h3>
-            <p>Creo interfaces web utilizando HTML, CSS y JavaScript, enfocándome en diseño, estructura y experiencia de usuario.</p>
-        </div>
+    <div class="card">
+        <h3>💻 Desarrollo Frontend</h3>
+        <p>
+            Creo interfaces web utilizando HTML, CSS y JavaScript, enfocándome en diseño, estructura y experiencia de usuario.
+            Me interesa que las páginas sean claras, accesibles y responsivas.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>⚙️ Aprendizaje de Backend</h3>
-            <p>Estoy aprendiendo Node.js, Express y bases de datos para entender el funcionamiento completo de las aplicaciones web.</p>
-        </div>
+    <div class="card">
+        <h3>⚙️ Aprendizaje de Backend</h3>
+        <p>
+            Estoy aprendiendo Node.js, Express y bases de datos para entender el funcionamiento completo de las aplicaciones web
+            y desarrollar proyectos de punta a punta.
+        </p>
+    </div>
 
-        <div class="card">
-            <h3>🚀 Mejora continua</h3>
-            <p>Trabajo en proyectos personales para reforzar mis habilidades y seguir creciendo como desarrolladora.</p>
-        </div>
-    </section>
+    <div class="card">
+        <h3>📈 Mejora continua</h3>
+        <p>
+            Trabajo en proyectos personales y académicos para reforzar mis habilidades, practicar nuevas tecnologías
+            y seguir creciendo como desarrolladora.
+        </p>
+    </div>
 
+    <!-- PROYECTO -->
+    <div class="card">
+        <h3>📱 App de tareas</h3>
+
+        <img src="./assets/img/mi_agenda.jpg" alt="App mobile">
+
+        <p>
+            Aplicación móvil desarrollada para gestionar tareas diarias de forma simple y organizada.
+        </p>
+
+        <a href="https://github.com/marce-sanagua/mi-agenda" target="_blank" class="btn-proyecto">
+            Ver proyecto
+        </a>
+    </div>
+
+</section>
     <!-- STACK -->
     <section id="stack">
         <h2>Stack Tecnológico</h2>
 
+        
         <table>
             <tr>
                 <th>Categoría</th>
@@ -87,13 +126,17 @@
             <tr><td>Control de versiones</td><td>Git, GitHub</td><td>Básico</td></tr>
             <tr><td>IA</td><td>Integración básica en proyectos</td><td>Inicial</td></tr>
             <tr><td>Documentación</td><td>UML</td><td>Académico</td></tr>
+            <td>Mobile</td><td>React Native (en estudio)</td><td>Inicial</td></tr>
+            
         </table>
     </section>
 
+   
     <!-- CONTACTO -->
     <section id="contacto">
         <h2>Contacto</h2>
 
+       
         <form>
             <div>
                 <label>Nombre:</label>
@@ -110,14 +153,27 @@
                 <input type="email" required>
             </div>
 
+            
             <div>
-                <label>Teléfono:</label>
-                <input type="tel" required>
-            </div>
+                <label>Comentarios:</label>
+        <textarea rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+    </div>
 
             <button type="submit">Enviar</button>
         </form>
     </section>
+
+     <div class="contacto-links">
+    <p>También podés encontrarme en:</p>
+
+    <a href="https://www.linkedin.com/in/marcela-sanagua" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+        
+    </a>
+
+    
+</div>
+
 
 </main>
 

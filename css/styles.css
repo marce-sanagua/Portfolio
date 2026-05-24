@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -29,7 +30,6 @@ header {
 header h1 {
     font-size: 2.2rem;
     font-weight: 700;
-    z-index: 1;
 }
 
 /*//////////////// NAV //////////////////*/
@@ -68,7 +68,7 @@ main {
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 /*//////////////// SECCIONES //////////////////*/
@@ -80,7 +80,6 @@ section {
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     transition: 0.3s;
     width: 100%;
-    margin-bottom: 0;
 }
 
 section:hover {
@@ -88,41 +87,58 @@ section:hover {
     border-color: #ec4899;
 }
 
+/*//////////////// TITULOS //////////////////*/
 h2 {
     color: #ec4899;
     font-size: 1.8rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 /*//////////////// SOBRE MI //////////////////*/
 #sobre-mi article {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
 }
 
 #sobre-mi img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ec4899;
+    width: 220px;
+    height: auto;
+
+    border-radius: 2%; 
+    border: none; 
+
+    object-fit: contain;
+    
 }
 
 #sobre-mi p {
-    max-width: 600px;
-    margin-bottom: 0.5rem;
+    max-width: 800px;
+    margin: 0 auto 1rem auto;
+    line-height: 1.7;
+    text-align: justify;
 }
+
 
 #sobre-mi a {
     display: inline-block;
     margin-top: 1rem;
-    padding: 0.7rem 1.2rem;
+    padding: 0.8rem 1.4rem;
+
     background: #ec4899;
-    color: white;
+    color: #ffffff;
+    font-weight: 500;
+
     text-decoration: none;
+
     border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.15);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+
     transition: 0.3s;
 }
 
@@ -130,13 +146,60 @@ h2 {
     background: #7c3aed;
 }
 
+/*//////////////// QUE HAGO //////////////////*/
+#que-hago {
+    text-align: center;
+}
+
+#que-hago .card {
+    width: 90%;
+    max-width: 850px;
+    margin: 1rem auto;
+    padding: 2rem;
+    border-radius: 14px;
+    background: #0b1220;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    text-align: center;
+}
+
+#que-hago .card:hover {
+    transform: translateY(-6px);
+    border-color: #ec4899;
+    box-shadow: 0 12px 30px rgba(236, 72, 153, 0.25);
+}
+
+#que-hago .card h3 {
+    margin-bottom: 0.5rem;
+    color: #ec4899;
+}
+
+#que-hago .card p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+.card {
+     text-align: center;
+}
+
+.card img {
+    width: 250px;        
+    height: auto;        
+    display: block;
+    margin: 1rem auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
 /*//////////////// STACK //////////////////*/
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 1rem;
-    overflow: hidden;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 th {
@@ -163,39 +226,26 @@ tr:hover {
     background: rgba(236, 72, 153, 0.15);
 }
 
-/*//////////////// QUE HAGO (CAJAS) //////////////////*/
-#que-hago {
+.contacto-links {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 
-#que-hago .card {
+.contacto-links a {
     display: inline-block;
-    vertical-align: top;
-    width: 260px;
-    margin: 1rem;
-    padding: 1.5rem;
-    border-radius: 14px;
-    background: #0b1220;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    margin: 0.5rem;
+    padding: 0.6rem 1rem;
+    background: #1f2937;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #e5e7eb;
     transition: 0.3s;
 }
 
-#que-hago .card:hover {
-    transform: translateY(-6px);
-    border-color: #ec4899;
-    box-shadow: 0 12px 30px rgba(236, 72, 153, 0.25);
+.contacto-links a:hover {
+    background:#0A66C2
 }
 
-#que-hago .card h3 {
-    margin-bottom: 0.5rem;
-    color: #ec4899;
-}
-
-#que-hago .card p {
-    font-size: 0.95rem;
-    color: #cbd5e1;
-}
 
 /*//////////////// CONTACTO //////////////////*/
 form {
@@ -222,18 +272,60 @@ input:focus {
     border-color: #ec4899;
 }
 
+textarea {
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #1f2937;
+    background: #0b1220;
+    color: white;
+    font-family: inherit;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #ec4899;
+}
+
 button {
     padding: 0.9rem;
     background: #ec4899;
-    color: white;
+    color: #ffffff;
+    font-weight: 600;
+
     border: none;
     border-radius: 8px;
     cursor: pointer;
+
     transition: 0.3s;
 }
 
 button:hover {
     background: #7c3aed;
+}
+
+.btn-proyecto {
+    display: inline-block;
+    margin: 1rem auto;
+    padding: 0.9rem 1.4rem;
+
+    background: #ec4899;
+    color:  #e5e7eb;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s;
+}
+
+.btn-proyecto:hover {
+    background: #7c3aed;
+    transform: translateY(-3px);
 }
 
 /*//////////////// RESPONSIVE //////////////////*/

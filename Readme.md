@@ -11,4 +11,4 @@ Incluye una presentación personal, tecnologías que manejo y formulario de cont
 
 ## Vista previa del proyecto
 
-<img src="assets/img/sampleM.png" alt="portfolio">
+<img src="assets/img/sample_M.png" alt="portfolio">
