@@ -195,7 +195,7 @@ h2 {
 .galeria-agenda {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0.8rem; /* un poco menos de espacio */
+    gap: 0.8rem; 
     margin: 1rem 0;
 }
 
@@ -203,7 +203,7 @@ h2 {
 .galeria-agenda img:first-child {
     grid-column: 1 / -1;
     width: 100%;
-    max-width: 300px; /* antes 350/500 */
+    max-width: 300px; 
     justify-self: center;
 }
 
@@ -217,8 +217,14 @@ h2 {
 }
 
 /*//////////////// STACK //////////////////*/
+.tabla-responsive {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden; /* evita que se salga */
+}
 table {
     width: 100%;
+    table-layout: fixed;
     border-collapse: collapse;
     margin-top: 1rem;
     border-radius: 10px;
@@ -362,4 +368,6 @@ button:hover {
         flex-direction: column;
         text-align: center;
     }
+
+    
 }
